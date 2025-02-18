@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Film, Search, User } from 'lucide-react';
+import { Film, Search } from 'lucide-react';
+import { AuthDialog } from './auth/AuthDialog';
 
 const Header: React.FC = () => {
   return (
@@ -24,9 +25,7 @@ const Header: React.FC = () => {
           </div>
 
           <nav className="flex items-center space-x-4">
-            <button className="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800">
-              <User className="h-5 w-5" />
-            </button>
+            <AuthDialog />
           </nav>
         </div>
       </div>
